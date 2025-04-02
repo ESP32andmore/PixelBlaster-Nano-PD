@@ -133,4 +133,4 @@ Fortunately for our customers, EPS32andmore.com, in a few short weeks will make 
 
 ### USB Type-C Cables
 
-The last component of any Power Delivery setup is a good quality PD3.1, 240 watt certified cable. Mnay fine cable are out there but we recommend the INIU USB C to USB C Cable, 240W Fast Charging Cable for its quality and fair price. 
+The last component of any Power Delivery setup is a good quality PD3.1, 240 watt certified cable. Mnany fine cable are out there but we recommend the INIU USB C to USB C Cable, 240W Fast Charging Cable for its quality and fair price. 
