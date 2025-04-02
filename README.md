@@ -53,19 +53,19 @@ The following are a few models that work well for different strip voltages:
 
 ### AOHI Magcube 140W USB C Charger 
 
-PDO1: Fixed PDO: 5000mV 3.00A ~ 3.24A 
+- PDO1: Fixed PDO: 5000mV 3.00A ~ 3.24A 
 
-PDO2: Fixed PDO: 9000mV 3.00A ~ 3.24A 
+- PDO2: Fixed PDO: 9000mV 3.00A ~ 3.24A 
 
-PDO3: Fixed PDO: 12000mV 3.00A ~ 3.24A 
+- PDO3: Fixed PDO: 12000mV 3.00A ~ 3.24A 
 
-PDO4: Fixed PDO: 15000mV 3.00A ~ 3.24A 
+- PDO4: Fixed PDO: 15000mV 3.00A ~ 3.24A 
 
-PDO5: Fixed PDO: 20000mV 5.00A ~ (More than) 
+- PDO5: Fixed PDO: 20000mV 5.00A ~ (More than) 
 
-PDO6: PPS PDO: 3300mV~21000mV 5.00A ~ (More than) 
+- PDO6: PPS PDO: 3300mV~21000mV 5.00A ~ (More than) 
 
-PDO8: Fixed PDO: 28000mV 5.00A ~ (More than) 
+- PDO8: Fixed PDO: 28000mV 5.00A ~ (More than) 
 
  
 
