@@ -1,4 +1,4 @@
-### PixelBlaster Nano PD
+# PixelBlaster Nano PD
 ## Description
 
 The PixelBlaster Nano PD is a next-generation, feature-rich WLED controller in a compact form factor (32 mm x 53mm), offering USB Power Delivery 3.1 capabilities for any addressable lighting project you may have. It has all the features of much larger boards but at a cost point you cannot ignore. 
