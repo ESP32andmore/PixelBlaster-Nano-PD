@@ -7,14 +7,14 @@ It supports virtually all LED strips and serial matrices using single-wire proto
 ## Features 
 
 * Uses the workhorse ESP32 dual-core 240MHz processor. 
-* Two channels of 5-volt logic-level translated outputs using ultra-fast and high-current LVC technology with matched and modeled serial inline resistors. 
+* Two channels of 5-volt logic-level translated outputs using ultra-fast and high-current LVC technology with matched and modeled serial inline resistors for high quality signal drive over short or long cables.
 * Low-profile Wago push-button terminal block for easy and secure electrical connections. 
 * Compact form factor of 32 mm x 53 mm. 
 * High-quality 4-layer impedance-controlled PCB with gold-plated connectors (ENIG) for durability and corrosion resistance. 
 * ICS-43434 I2S 24-bit digital microphone with a sensitivity of -26 dB FS and SNR of 64 dBa. 
 * Onboard ATtiny1616 controller manages the AP33772S Power Delivery 3.1 sink controller. 
 * Input power: 5-28 volts @ 5-amp max. via USB-C connector, up to 140 watts max.
-* Output voltage selectable at 5V, 12V, and 24V via onboard switch.
+* Output voltage selectable for 5V, 12V, and 24V strips via onboard switch.
 * Overvoltage and undervoltage protection on input power that shuts off power to LEDs and the board. 
 * Overcurrent protection with 5-amp “electronic” fuse. 
 * Over temperature protection of the board and moisture detection on USB-C connector. 
