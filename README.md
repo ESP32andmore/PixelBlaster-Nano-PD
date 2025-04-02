@@ -105,7 +105,7 @@ The following are a few models that work well for different strip voltages:
 
 - PDO9: AVS PDO: 15000mV~28000mV 5.00A ~ (More than) 
 
-The AOHi Magcube works great for5-volts and 12-volt strips giving a full 5 maps of current. The Anker is cost effective for 5-volt strips at 5 amps, but for 12-vot strips is limited to 3 maps.  The AMEGAT Power Bank is a great portable solution and although its literature and the back placard states it supports a PPO profile allowing 5 and 12-volts at 5amps, it does not. Unfortunately, at the time of writing there is only one charger that covers 5-volt, 12-volt, and 24-volt strips at a full 5 amps and that is the Framework 180watt USB-C Power Adaptor, but it is very pricey at over $100. 
+The AOHi Magcube works great for 5-volts and 12-volt strips giving a full 5 maps of current. The Anker is cost effective for 5-volt strips at 5 amps, but for 12-vot strips is limited to 3 amps.  The AMEGAT Power Bank is a great portable solution and although its literature and the back placard states it supports a PPO profile allowing 5 and 12-volts at 5amps, it does not. Unfortunately, at the time of writing there is only one charger that covers 5-volt, 12-volt, and 24-volt strips at a full 5 amps and that is the Framework 180watt USB-C Power Adaptor, but it is very pricey at over $100. 
 
 Fortunately for our customers, EPS32andmore.com, in a few short weeks will make available a new and extremely capable power adaptor called the GaN PD3.2 240w. It has all the PD 3.1 fixed profiles from 5 volts to 48 volts at 5 amps, PPS: 5–21 volts at 5 amps, and AVS: 15–48 at 5 amps, making it the end all solution at a comfortable price of $39.99. 
 
