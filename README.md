@@ -56,17 +56,11 @@ The following are a few models that work well for different strip voltages:
 ### AOHI Magcube 140W USB C Charger 
 
 - PDO1: Fixed PDO: 5000mV 3.00A ~ 3.24A 
-
 - PDO2: Fixed PDO: 9000mV 3.00A ~ 3.24A 
-
 - PDO3: Fixed PDO: 12000mV 3.00A ~ 3.24A 
-
 - PDO4: Fixed PDO: 15000mV 3.00A ~ 3.24A 
-
 - PDO5: Fixed PDO: 20000mV 5.00A ~ (More than) 
-
 - PDO6: PPS PDO: 3300mV~21000mV 5.00A ~ (More than) 
-
 - PDO8: Fixed PDO: 28000mV 5.00A ~ (More than) 
 
  
@@ -74,17 +68,11 @@ The following are a few models that work well for different strip voltages:
 ### Anker 313 45W USB C Charger Block 
 
 - PDO1: Fixed PDO: 5000mV 3.00A ~ 3.24A 
-
 - PDO2: Fixed PDO: 9000mV 3.00A ~ 3.24A 
-
 - PDO3: Fixed PDO: 15000mV 3.00A ~ 3.24A 
-
 - PDO4: Fixed PDO: 20000mV 2.25A ~ 2.49A 
-
 - PDO5: PPS PDO: 3300mV11000mV 5.00A ~ (More than) 
-
 - PDO6: PPS PDO: 3300mV16000mV 3.00A ~ 3.24A 
-
 - PDO7: PPS PDO: 3300mV~21000mV 2.25A ~ 2.49A 
 
  
@@ -92,50 +80,47 @@ The following are a few models that work well for different strip voltages:
 ### AMEGAT Power Bank 140W, 27600mAh 3-Port Portable Charger 
 
 - PDO1: Fixed PDO: 5000mV 3.00A ~ 3.24A 
-
 - PDO2: Fixed PDO: 9000mV 3.00A ~ 3.24A 
-
 - PDO3: Fixed PDO: 12000mV 3.00A ~ 3.24A 
-
 - PDO4: Fixed PDO: 15000mV 3.00A ~ 3.24A 
-
 - PDO5: Fixed PDO: 20000mV 5.00A ~ (More than) 
-
 - PDO6: Fixed PDO: 0mV 0.00A ~ 1.24A (Less than) 
-
 - PDO8: Fixed PDO: 28000mV 5.00A ~ (More than) 
-
 - PDO9: AVS PDO: 15000mV~28000mV 5.00A ~ (More than) 
 
 The AOHi Magcube works great for 5-volts and 12-volt strips giving a full 5 maps of current. The Anker is cost effective for 5-volt strips at 5 amps, but for 12-vot strips is limited to 3 amps.  The AMEGAT Power Bank is a great portable solution and although its literature and the back placard states it supports a PPO profile allowing 5 and 12-volts at 5amps, it does not. Unfortunately, at the time of writing there is only one charger that covers 5-volt, 12-volt, and 24-volt strips at a full 5 amps and that is the Framework 180watt USB-C Power Adaptor, but it is very pricey at over $100. 
 
-Fortunately for our customers, EPS32andmore.com, in a few short weeks will make available a new and extremely capable power adaptor called the GaN PD3.2 240w. It has all the PD 3.1 fixed profiles from 5 volts to 48 volts at 5 amps, PPS: 5–21 volts at 5 amps, and AVS: 15–48 at 5 amps, making it the end all solution at a comfortable price of $39.99. 
+### ESP32andmore GaN 240W
 
-### ESP32andmore GaN 240W 
+Fortunately for our customers, EPS32andmore.com, in a few short weeks will make available a new and extremely capable power adaptor called the GaN PD3.2 240w. It has all the PD 3.1 fixed profiles from 5 volts to 48 volts at 5 amps, PPS: 5–21 volts at 5 amps, and AVS: 15–48 at 5 amps, making it the end all solution at a comfortable price of $39.99.  
 
 - PDO1: Fixed PDO: 5000mV 5.00A ~ (More than) 
-
 - PDO2: Fixed PDO: 9000mV 5.00A ~ (More than) 
-
 - PDO3: Fixed PDO: 12000mV 5.00A ~ (More than) 
-
 - PDO4: Fixed PDO: 15000mV 5.00A ~ (More than) 
-
 - PDO5: Fixed PDO: 20000mV 5.00A ~ (More than) 
-
 - PDO6: PPS PDO: 5000mV21000mV 5.00A ~ (More than) 
-
 - PDO8: Fixed PDO: 28000mV 5.00A ~ (More than) 
-
 - PDO9: Fixed PDO: 36000mV 5.00A ~ (More than) 
-
 - PDO9: Fixed PDO: 48000mV 5.00A ~ (More than) 
-
 - PDO10: AVS PDO: 15000mV~48000mV 5.00A ~ (More than) 
+
 
 ### USB Type-C Cables
 
-The last component of any Power Delivery setup is a good quality PD3.1, 240 watt certified cable. Mnany fine cable are out there but we recommend the INIU USB C to USB C Cable, 240W Fast Charging Cable for its quality and fair price. 
+The last component of any Power Delivery setup is a good quality PD3.1, 240 watt certified cable. Mnany fine cable are out there but we recommend the INIU USB C to USB C Cable, 240W Fast Charging Cable for its quality and fair price.
+
+
+### Setting the Working Voltage
+
+The PixelBlaster Nano PD sets the working voltage of the LEDs by way of the 3-switch block on the board. By default this is set to 5 volts. Setting to 12 volts and 24 volts is available with the correct swtich setting.  BE CERTAIN you have selected the correct voltage for your connected LEDs.
+
+On powerup, USB-C connection, or changing the switches, based on the selected voltage, the PixelBlaster will ascertain the available voltages and currents of the charger, and set the charger's profile (PDOs) at the desired voltage to the maxmium current available with priority givien to any variable voltage PDOs. Know your charger's capabilities before connecting your string. If your charger does not have voltage capabilities for your setting, it will default to 5 volts.
+
+If you do exceed your charger's current capabilities, the overcurrent protection will intitiate, power will be shut off to the LEDs. As a safety measure, you will have to disconnect the the PxielBlaster from the USB and correct your overcurrent.
+
+A slow flash on the Status LED indicates the board has successfully negociated a PDO with the charger but NOT THAT IT HAS negociated the selected voltage. To determine that make sure the power is turned on in WLED. A dim Voltage LED indicates 5 volts, a medium brightness on the Voltage LED indicates 12 volts, and a bright LED indicates 24 volts.
+
 
 ### Programming WLED
 
