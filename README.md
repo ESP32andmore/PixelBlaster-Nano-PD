@@ -121,11 +121,14 @@ If you do exceed your charger's current capabilities, the overcurrent protection
 
 A slow flash on the Status LED indicates the board has successfully negociated a PDO with the charger but NOT THAT IT HAS negociated the selected voltage. To determine that make sure the power is turned on in WLED. A dim Voltage LED indicates 5 volts, a medium brightness on the Voltage LED indicates 12 volts, and a bright LED indicates 24 volts.
 
-## 5 Volts
+### 5 Volts
+<img src="work/PixelBlaster2_5v.JPG" width=200>
 
-## 12 Volts
+### 12 Volts
+<img src="work/PixelBlaster2_12v.JPG" width=200>
 
-## 24 Volts
+### 24 Volts
+<img src="work/PixelBlaster2_24v.JPG" width=200>
 
 
 ### Programming WLED
