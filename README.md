@@ -4,7 +4,7 @@
 The PixelBlaster Nano PD is a next-generation, feature-rich WLED controller in a compact form factor (32 mm x 53mm), offering USB Power Delivery 3.1 capabilities for any addressable lighting project you may have. It has all the features of much larger boards but at a cost point you cannot ignore. 
 It supports virtually all LED strips and serial matrices using single-wire protocols, such as the WS2811 and WS2812B, to SPI (clocked-data) protocol devices, such as the WS2813 and SK9822, in 5V, 12V, 24V, and higher. 
 
-<img src="work/PixelBlaster2_front_crop.JPG" width=400>-------<img src="work/PixelBlaster2_back_crop.JPG" width=400>
+<img src="work/PixelBlaster2_front_crop.JPG" width=400>----<img src="work/PixelBlaster2_back_crop.JPG" width=400>
 
 ## Features 
 
@@ -120,6 +120,12 @@ On powerup, USB-C connection, or changing the switches, based on the selected vo
 If you do exceed your charger's current capabilities, the overcurrent protection will intitiate, power will be shut off to the LEDs. As a safety measure, you will have to disconnect the the PxielBlaster from the USB and correct your overcurrent.
 
 A slow flash on the Status LED indicates the board has successfully negociated a PDO with the charger but NOT THAT IT HAS negociated the selected voltage. To determine that make sure the power is turned on in WLED. A dim Voltage LED indicates 5 volts, a medium brightness on the Voltage LED indicates 12 volts, and a bright LED indicates 24 volts.
+
+## 5 Volts
+
+## 12 Volts
+
+## 24 Volts
 
 
 ### Programming WLED
